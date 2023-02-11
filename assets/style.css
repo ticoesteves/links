@@ -1,0 +1,203 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --maxWidthContent: 1020px;
+    --primaryColor: #698EC0;
+    --secundaryColor: #343746;
+    --whiteColor: #fff;
+    --blackColor: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--secundaryColor);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+header {
+    height: 380px;
+    background-image: url("../assets/img/code.jpg");
+    background-size: cover;
+    box-shadow: 0px -5px 20px var(--blackColor);
+    -webkit-box-shadow: 0px -5px 20px var(--blackColor);
+    -moz-box-shadow: 0px -5px 20px var(--blackColor);;
+}
+
+header::before {
+    position: absolute;
+    top: 0;
+    
+}
+
+header .content {
+    width: 100%;
+    max-width: 100%;
+    height: 380px;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: #698fc0d7;
+    background-image: url("../assets/img/tico_esteves_mascote.png");
+    background-size: 380px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 210px;
+    border-radius: 100%;
+    box-shadow: 0px -5px 20px var(--blackColor);
+    -webkit-box-shadow: 0px -5px 20px var(--blackColor);
+    -moz-box-shadow: 0px -5px 20px var(--blackColor);
+}
+
+.logo {
+    margin-top: 1rem;
+}
+
+.at__sign {
+    color: var(--whiteColor);
+}
+
+.content {
+    width: 100%;
+    max-width: var(--maxWidthContent);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto 3rem auto;
+    padding: 1rem 2rem 2rem;
+}
+
+.card {
+    display: flex;
+    width: 48%;
+    margin: 1rem 0;
+}
+
+.card:last-child {
+    width: 100%;
+}
+
+.card a {
+    width: 100%;
+    padding: 2rem 0;
+    color: var(--whiteColor);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.portfolio {
+    background-image: linear-gradient(to right, #698EC0, #525875);
+    border-radius: 10px;
+}
+
+.portfolio:hover {
+    background-image: linear-gradient(to left, #698EC0, #525875);
+}
+
+.instagram {
+    background-image: linear-gradient(to right, #ED8936, #C41E78);
+    border-radius: 10px;
+}
+
+.instagram:hover {
+    background-image: linear-gradient(to left, #ED8936, #C41E78);
+}
+
+.blog {
+    background-image: linear-gradient(to right, #ED8936, #D76B13);
+    border-radius: 10px;
+}
+
+.blog:hover {
+    background-image: linear-gradient(to left, #ED8936, #D76B13);
+}
+
+.github {
+    background-color: var(--blackColor);
+    border-radius: 10px;
+}
+
+.github:hover {
+    background-color: #6e6d6d;
+    border-radius: 10px;
+}
+
+.linkedin {
+    background-image: linear-gradient(to right, #0A74DC, #044F9A);
+    border-radius: 10px;
+}
+
+.linkedin:hover {
+    background-image: linear-gradient(to left, #0A74DC, #044F9A);
+}
+
+.youtube {
+    background-image: linear-gradient(to right, #F94E4F, #C42122);
+    border-radius: 10px;
+}
+
+.youtube:hover {
+    background-image: linear-gradient(to left, #F94E4F, #C42122);
+}
+
+.email {
+    background-image: linear-gradient(to right, #4285F4, #EA4235);
+    border-radius: 10px;
+}
+
+.email:hover {
+    background-image: linear-gradient(to right, #FABB00, #35A853);
+}
+
+footer {
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    background-color: var(--primaryColor);
+    box-shadow: 0px 5px 20px var(--blackColor);
+    -webkit-box-shadow: 0px 5px 20px var(--blackColor);
+    -moz-box-shadow: 0px 5px 20px var(--blackColor);
+}
+
+.message__footer {
+    width: 100%;
+    max-width: var(--maxWidthContent);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+    color: var(--whiteColor);
+    font-size: 1rem;
+}
+
+@media(max-width:590px) {
+
+    header .content {
+        background-image: none;
+    }
+    .content {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
